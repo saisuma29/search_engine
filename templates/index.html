@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body><center>
+   {% extends "layout.html" %}
+   {% block content %}
+
+   <div class="search">
+		<form method="POST">
+    <br>
+    <h3><label for = 'input_query'>Search Query</label>
+		<input name = 'input_query' id = "inputbox"></h3> <br><br>
+    <input type = 'submit' id = "query" name = 'submit_button' value = 'Search'>
+    <input type = 'submit' id = "pages" name = 'submit_button' value = 'Want more pages'>
+    <input type = 'submit' id = "exit" name = 'submit_button' value = 'Exit'>
+		</form>
+   </div>
+   {% endblock %}
+  </center>
+  </body>
+</html>

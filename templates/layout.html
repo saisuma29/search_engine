@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>  
+	<title>Search Engine App</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>	
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="title">A Web Search Engine</h1>
+      </div>
+    </header>
+	<div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+	<div class="show_table">
+	<h3 id="search"> Top hits for the query : </h3><br>
+	<div id="result_table">
+	<table id="page_rank">
+	<thead><tr><th>Rank</th><th>URL</th></tr></thead>
+	<tbody>
+		{% for i, v in result %}
+		<tr><td>{{(i+1)}}</td><td>{{ v }}</td></tr>
+		{% endfor %}
+	</tbody>
+	</table>
+	</div>
+	</div>
+  </body>
+</html>
