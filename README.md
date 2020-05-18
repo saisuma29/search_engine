@@ -1,7 +1,4 @@
-# search_engine
-
-A Web Search Engine for the UIC Domain
-(Please read the pdf for details regarding the project)
+# Web Search Engine for UIC domain
 
 # Running Code:
 
